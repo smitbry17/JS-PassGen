@@ -157,9 +157,16 @@ function generatePassword(){
         guaranteedCharacters.push(getRandom(numbers));
     }
 
-    for(var i = 0; i , choice.length; i++){
-
+    for(var i = 0; i < choice.length; i++){
+    var potentialCharacter = getRandom(potentialCharacters);
+    result.push(potentialCharacter);
     }
+
+    for(var i = 0; i < guaranteedCharacters.length; i++){
+        result[i] = guaranteedCharacters[i];
+    }
+    
+    return result.join(" ");
 }
 
 // Get references to the #generate element
