@@ -1,4 +1,4 @@
-import upper from './assets/upperCase.json' assert { type: 'JSON' };
+import upper from '.upperCase.json' assert { type: 'json' };
 var lowerCase;
 var upperCase = upper;
 var lowerCase;
