@@ -1,11 +1,11 @@
-import upper from '.upperCase.json' assert { type: 'json' };
+import upper from './upperCase.json' assert { type: 'json' };
 var lowerCase;
 var upperCase = upper;
 var lowerCase;
 var special;
 var numbers;
 
-console.log(upperCase);
+console.log(upper);
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
