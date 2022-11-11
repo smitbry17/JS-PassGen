@@ -1,4 +1,4 @@
-
+// Array Creation //
 var lowerCase = [
     'a',
     'b',
@@ -82,7 +82,7 @@ var special = [
   ];
   
 var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-
+// Password Choice Collection //
 function getPasswordOptions(){
     var length = parseInt(prompt("How long would you like your password to be?: "),10);
 
@@ -120,13 +120,14 @@ var passwordChoice = {
 return passwordChoice;
 
 }
-
+// Random String Gen //
 function getRandom(arr){
     var randGen = Math.floor(Math.random() * arr.length);
     var randElement = arr[randGen]
 
     return randElement;
 }
+// Password Generation //
 function generatePassword(){
     var choice = getPasswordOptions();
 
@@ -165,7 +166,7 @@ function generatePassword(){
     for(var i = 0; i < guaranteedCharacters.length; i++){
         result[i] = guaranteedCharacters[i];
     }
-    
+    // Return Final Password Result //
     return result.join(" ");
 }
 
